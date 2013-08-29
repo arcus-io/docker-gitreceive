@@ -9,6 +9,8 @@ RUN chmod +x /usr/local/bin/gitreceive
 RUN /usr/local/bin/gitreceive init
 ADD run.sh /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
+ADD sshkey.pub /root/.ssh/authorized_keys
+RUN chown root:root /root/.ssh/authorized_keys
 
 EXPOSE 22
 CMD ["/usr/local/bin/run"]

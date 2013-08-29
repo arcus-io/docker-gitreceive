@@ -6,13 +6,13 @@ if [ "$RECEIVER_URL" != "" ]; then
 else
     cat << EOF > /home/git/receiver
 #!/bin/bash
-REPOSITORY=$1
-REVISION=$2
-USERNAME=$3
-FINGERPRINT=$4
+REPOSITORY=\$1
+REVISION=\$2
+USERNAME=\$3
+FINGERPRINT=\$4
 CONTENTS=@-
 
-echo "Received $1 push from $3"
+echo "Received \$1 push from \$3"
 EOF
 fi
 
