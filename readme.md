@@ -1,4 +1,6 @@
-# gitreceive (https://github.com/progrium/gitreceive)
+# gitreceive
+
+Gitreceive https://github.com/progrium/gitreceive
 
 * `docker build -t gitreceive .`
 * `docker run gitreceive`
